@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
+"""importing list from typing module"""
 from typing import List
-"""importing the list from typing module"""
 
 
 def sum_list(input_list: List[float]) -> float:
