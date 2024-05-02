@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
+"""importing list and Union from typing module"""
 from typing import List, Union
-"""importing list"""
+
 
 mytype = List[Union[int, float]]
 
