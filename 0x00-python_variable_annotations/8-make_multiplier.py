@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
-"""make_multiplier func"""
+"""
+    gives the multiplies of a float
+"""
+from typing import Callable
 
 
-def make_multiplier(multiplier: float) -> callable:
-    """function that returns a func"""
-
-    def multiply(n: float) -> float:
-        """multiplies two floats"""
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
+    """
+        the function that multiplies a float
+    """
+    def multiplier(n: float) -> float:
+        """
+            returns the multiplies of a float
+        """
         return n * multiplier
 
-    return multiply
+    return make_multiplier
