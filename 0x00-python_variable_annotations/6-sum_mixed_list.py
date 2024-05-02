@@ -3,10 +3,8 @@
 from typing import List, Union
 
 
-mytype = List[Union[int, float]]
-
-
-def sum_mixed_list(mxd_list: mytype) -> float:
+def sum_mixed_list(mxd_list: List[Union[int, float]]
+                   ) -> float:
     total = 0
     for item in mxd_list:
         total += item
