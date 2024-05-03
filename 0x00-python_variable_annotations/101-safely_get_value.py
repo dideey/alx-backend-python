@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""importing from typing module"""
-from typing import Mapping, Any, Union, TypeVar
+"""
+Add type annotations to the function
+"""
+
+from typing import Any, Union, Mapping, TypeVar
+
+T = TypeVar("T")
 
 
-T = TypeVar('T')
-
-
-def safely_get_value(dct: Mapping, key: Any,
-                     default: Union[T, None] = None) -> Union[T, None]:
-    """Return the value of a key in a dictionary"""
+def safely_get_value(
+    dct: Mapping, key: Any, default: Union[T, None] = None
+) -> Union[Any, T]:
+    """safely get value"""
     if key in dct:
         return dct[key]
     else:
