@@ -2,6 +2,7 @@
 """importing from typing module"""
 from typing import Mapping, Any, Union, TypeVar
 
+
 T = TypeVar('T')
 
 
