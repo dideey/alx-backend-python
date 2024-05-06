@@ -4,7 +4,7 @@ import asyncio
 """import asyncio and random modules"""
 
 
-async def wait_random(max_delay: int = 10):
+async def wait_random(max_delay: int = 10) -> float:
     """takes an interger and waits for a random number of seconds"""
     delay = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
